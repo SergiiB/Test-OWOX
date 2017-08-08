@@ -67,11 +67,11 @@ header {
 	color: #3e77aa;
 }
 .user-name-link:hover::before {
-	background: url('img/sprite_blue.png') no-repeat 0 -417px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -417px;
 }
 .header_user_name a::before {
 	content: "";
-	background: url('img/sprite_blue.png') no-repeat 0 -401px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -401px;
 	width: 15px;
 	height: 14px;
 	top: 50%;
@@ -93,7 +93,7 @@ header {
 }
 .phones::before {
 	content: "";
-	background: url('img/sprite_blue.png') no-repeat 0 -386px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -386px;
 	width: 20px;
 	height: 12px;
 	top: 50%;
@@ -112,7 +112,7 @@ header {
 }
 .sell::before {
 	content: "";
-	background: url('img/sell.png') no-repeat;
+	background: url('../img/sell.png') no-repeat;
 	width: 18px;
 	height: 16px;
 	top: 50%;
@@ -154,7 +154,7 @@ header {
 }
 .head__select_city_name a::after {
 	content: "";
-	background: url('img/sprite_blue.png') no-repeat 0 0;
+	background: url('../img/sprite_blue.png') no-repeat 0 0;
 	width: 14px;
 	height: 8px;
 	top: 60%;
@@ -199,7 +199,7 @@ header {
 }
 .head-search-category-link::after {
 	content: "";
-	background: url('img/sprite_blue.png') no-repeat 0 0;
+	background: url('../img/sprite_blue.png') no-repeat 0 0;
 	width: 14px;
 	height: 8px;
 	top: 60%;
@@ -208,7 +208,7 @@ header {
     position: absolute;
 }
 .head-search-category-link:hover::after {
-	background: url('img/sprite_blue.png') no-repeat 0 -12px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -12px;
 }
 .head-search-category-link:hover {
 	color: #fc636e;
@@ -228,7 +228,7 @@ header {
 }
 .head-search-input-wrapper:before {
 	content: "";
-	background: url('img/sprite.png') no-repeat 0 -64px;
+	background: url('../img/sprite.png') no-repeat 0 -64px;
 	width: 20px;
 	height: 19px;
 	top: 45%;
@@ -279,17 +279,17 @@ input {
     position: absolute;
 }
 .button-link-compare::before {
-	background: url('img/sprite_blue.png') no-repeat 0 -141px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -141px;
 	width: 40px;
 	height: 32px;
 }
 .button-link-desires::before {
-	background: url('img/sprite_blue.png') no-repeat 0 -286px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -286px;
 	width: 36px;
 	height: 32px;
 }
 .button-link-basket::before {
-	background: url('img/sprite_blue.png') no-repeat 0 -72px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -72px;
 	width: 36px;
 	height: 32px;
 }
@@ -336,7 +336,7 @@ input {
 }
 .catalog-btn-link span::after {
 	content: "";
-	background: url('img/sprite.png') no-repeat 0 -35px;
+	background: url('../img/sprite.png') no-repeat 0 -35px;
 	width: 14px;
 	height: 10px;
 	float: left;
@@ -389,7 +389,7 @@ input {
 .btn-link-blue .btn-link-item::before {
 	width: 15px;
 	height: 14px;
-	background: url('img/shape_25_copy_6.png') no-repeat;
+	background: url('../img/shape_25_copy_6.png') no-repeat;
 }
 .btn-link-gray {
     border: 1px solid #dddde0;
@@ -399,7 +399,7 @@ input {
 .btn-link-gray .btn-link-item::before {
 	width: 15px;
 	height: 15px;
-	background: url('img/shape_26_copy_2.png') no-repeat;
+	background: url('../img/shape_26_copy_2.png') no-repeat;
 }
 .btn-link-gray .btn-link-item {
 	color: #333;
@@ -449,7 +449,7 @@ input {
 	color: #fc8e94;
 }
 .list-orders-item:hover .order-number a::before {
-	background: url('img/sprite_blue.png') no-repeat 0 -12px;
+	background: url('../img/sprite_blue.png') no-repeat 0 -12px;
 }
 .list-orders-item:hover .order-number a span {
 	border-bottom: 1px dashed #fc8e94;
@@ -468,6 +468,15 @@ input {
 }
 .list-orders-item-ok::before {
 	background: #d9f0d7;
+}
+.list-orders-item-processed::before {
+	background: #e1e6f9;
+}
+.list-orders-item-waiting::before {
+	background: #fed9db;
+}
+.list-orders-item-transferred::before {
+	background: #e0f1f2;
 }
 .orders-item-status {
     border-left: 1px solid #e4e8ea;
@@ -494,7 +503,7 @@ input {
 .info-product {
     font-size: 15px;
     overflow: hidden;
-    padding: 12px 0 6px 21px;
+    padding: 12px 0 6px 0;
     border-right: 1px solid #e4e8ea;
 }
 .order-number {
@@ -510,7 +519,7 @@ input {
 }
 .order-number a::before {
     content: "";
-    background: url('img/sprite_blue.png') no-repeat 0 0;
+    background: url('../img/sprite_blue.png') no-repeat 0 0;
     width: 14px;
     height: 8px;
     float: left;
@@ -523,7 +532,6 @@ input {
 }
 .order-wrapper {
 	float: right;
-	/*width: 75%;*/
 }
 .order-date {
     float: left;
@@ -577,7 +585,7 @@ input {
 }
 .history a::after {
     content: "";
-    background: url('img/sprite_blue.png') no-repeat 0 0;
+    background: url('../img/sprite_blue.png') no-repeat 0 0;
     width: 14px;
     height: 8px;
     float: left;
@@ -608,7 +616,7 @@ input {
 }
 .list-orders-item-more .show-more::before {
     content: "";
-    background: url('img/reload-icon_2.png') no-repeat;
+    background: url('../img/reload-icon_2.png') no-repeat;
     width: 82px;
     height: 82px;
     float: left;
@@ -689,7 +697,7 @@ input {
 }
 .order-full-info a::before {
     content: "";
-    background: url('img/sprite_blue.png') no-repeat 0 0;
+    background: url('../img/sprite_blue.png') no-repeat 0 0;
     width: 14px;
     height: 8px;
     float: left;
@@ -698,7 +706,7 @@ input {
     position: absolute; 
 }
 .order-full-info a:hover::before {
-    background: url('img/sprite_blue.png') no-repeat 0 -12px;
+    background: url('../img/sprite_blue.png') no-repeat 0 -12px;
 }
 .order-full-info a span {
     border-bottom: 1px dashed #3e77aa;
@@ -734,6 +742,8 @@ input {
 .item-details {
     width: 100%;
     height: 50px;
+    padding: 10px;
+    border-bottom: 1px dashed #e7e7e7;
 }
 .delivery {
     float: left;
@@ -741,7 +751,27 @@ input {
 .total-amount {
     float: right;
 }
+.full-info .row {
+	margin: 0;
+}
 /*------and--------*/
+.pagination li {
+	display: inline-block;
+	padding: 5px 14px;
+    border-radius: 3px;
+    font-size: 28px;
+}
+.pagination .active {
+    background: #4dbe41;
+}
+.pagination .active a {
+    color: #fff; 
+    font-weight: 600;
+}
+.page-link {
+	text-decoration: none;
+	color: #3e77aa;
+}
 
 .clearfix:after {
     content: ".";
