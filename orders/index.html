@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Мои заказы</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+	
+		<header>
+			<div class="page__line">
+				<nav class="nav-header clearfix">
+					<div class="header_user">
+						<span class="greeting">Привет,</span>
+						<span class="header_user_name"><a href="#" class="user-name-link"><span>Константин Перевозник</span></a></span>
+					</div>
+					<div class="header_contacts_content">
+						<div class="header_contacts">
+						<span class="phones"><strong>(044) 537-02-22</strong>, (044) 503-80-80, 0(800) 503-808</span>
+					</div>
+					<div class="sell_goods clearfix">
+						<a href="#"><span class="sell">Продать товар на розетке</span></a>
+					</div>
+					<ul class="header_menu">
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Кредит</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					</div>
+				</nav>
+				<div class="head row">
+					<div class="head__logo">
+						<div class="logo">
+							<a href="#"><img src="img/logo.png" alt="" class="logo__img" width="201" height="51"></a>
+						</div>
+					</div>
+					<div class="head__select_city">
+						<div class="head__select_city_cap">Город</div>
+						<div class="head__select_city_name">
+							<a href="#"><strong>Киев</strong></a>
+						</div>
+					</div>
+					<div class="head__search_wrapper">
+						<form action="" class="head__search_form">
+							<div class="head-search-category">
+								<a href="#" class="head-search-category-link"><span>По всем категориям</span></a>
+							</div>
+							<div class="head-search-input-wrapper">
+								<input type="text" placeholder="Поиск">
+							</div>
+						</form>
+					</div>
+					<ul class="head__user_buttons">
+						<li class="user-button-item"><a href="#" class="button-link-compare"><span>Сравнение</span></a></li>
+						<li class="user-button-item"><a href="#" class="button-link-desires"><span>Желания</span></a></li>
+						<li class="user-button-item"><a href="#" class="button-link-basket"><span>Корзина</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="page__line">
+				<div class="section-nav">
+					<div class="catalog">
+						<a href="#" class="btn-link catalog-btn-link"><span>Каталог товаров</span></a>
+					</div>
+					<ul class="section-menu">
+						<li class="section-menu-item"><span>Мой кабинет</span></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Личные данные</a></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Корзина</a></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Список желаний</a></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Лист ожидания</a></li>
+						<li class="section-menu-item active"><a href="#" class="section-menu-link">Мои заказы</a></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Рассылки</a></li>
+						<li class="section-menu-item"><a href="#" class="section-menu-link">Участие в акциях</a></li>
+					</ul>
+				</div>
+				<div class="orders-wrepper clearfix">
+					<div class="orders-header clearfix">
+						<h1>Мои заказы</h1>
+						<div class="display-types">
+							<div class="btn-link btn-link-blue"><a href="#" class="btn-link-item">В деталях</a></div>
+							<div class="btn-link btn-link-gray"><a href="#" class="btn-link-item">Списком</a></div>
+						</div>
+					</div>
+					<div class="list-orders">
+						<div class="list-orders-item clearfix">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status">
+										Новый заказ
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100723306</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item clearfix">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status processed">
+										Обрабатывается менеджером
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										22 июня 2014 5:24
+									</div>
+									<div class="price-product">
+										1 товар на 2798 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_8_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item full-info clearfix">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status">
+										Статус заказа: <h2>Ожидает оплаты</h2>
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+								<div class="order-actions row">
+									<div class="order-btn">
+										<a href="#" class="btn-link btn-payment">Оплатить заказ</a>
+									</div>
+									<div class="due-date">Действителен к оплате до 25 августа 2014</div>
+								</div>
+								<div class="info-payment">
+									Для оплаты заказа вы будете перенаправленны на страницу процессингового центра ПриватБанка
+								</div>
+								<div class="cards">
+									<img src="img/layer_3_2.png" alt="ViSA">
+									<img src="img/layer_4_2.png" alt="MasterCard">
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="row">
+									<div class="order-number">
+										<a href="#"><span>№ 100723306</span></a>
+									</div>
+									<div class="order-wrapper">
+										<div class="order-date">
+											15 августа 2014 15:25
+										</div>
+										<div class="order-full-info">
+											<a href="#"><span>Полная информация о заказе</span></a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="item-details row">
+									<div class="product-image">
+										<img src="img/layer_5_2.jpg" alt="">
+										<div class="name-product">
+											<a href="#">Sony VAIO VPC-W21S1R/W <span>№ 523436</span></a>
+											845 грн.
+										</div>
+									</div>
+									<div class="item-details_sell">
+										<div class="quantity">1 шт.</div>
+										<div class="price">845 грн.</div>
+									</div>
+								</div>
+								<div class="item-details row">
+									<div class="delivery">Доставка</div>
+									<div class="price">35 грн.</div>
+								</div>
+								<div class="total-amount">Итого к оплате: 880 грн.</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status transferred">
+										Передан в службу доставки
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715347</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_9_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status expired">
+										Истек срок резерва
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										2 товара на 15 764 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_10_copy.png" alt="">
+										<img src="img/layer_21_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100714572</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										5 товаров на 724 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_14_copy.png" alt="">
+										<img src="img/layer_23_copy.png" alt="">
+										<img src="img/layer_16_copy.png" alt="">
+										<img src="img/layer_20_copy.png" alt="">
+										<img src="img/layer_18_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100710980</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100723306</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_5_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status processed">
+										Обрабатывается менеджером
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_8_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715347</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_9_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_10_copy.png" alt="">
+										<img src="img/layer_21_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100714572</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_14_copy.png" alt="">
+										<img src="img/layer_23_copy.png" alt="">
+										<img src="img/layer_16_copy.png" alt="">
+										<img src="img/layer_20_copy.png" alt="">
+										<img src="img/layer_18_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100710980</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status expired">
+										Истек срок резерва
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_30.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_8_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715347</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_9_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status">
+										Новый заказ
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100723306</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_10_copy.png" alt="">
+										<img src="img/layer_21_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100714572</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_14_copy.png" alt="">
+										<img src="img/layer_23_copy.png" alt="">
+										<img src="img/layer_16_copy.png" alt="">
+										<img src="img/layer_20_copy.png" alt="">
+										<img src="img/layer_18_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100723306</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status expired">
+										Истек срок резерва
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_30.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_8_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715347</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_9_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100715083</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_10_copy.png" alt="">
+										<img src="img/layer_21_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100714572</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_14_copy.png" alt="">
+										<img src="img/layer_23_copy.png" alt="">
+										<img src="img/layer_16_copy.png" alt="">
+										<img src="img/layer_20_copy.png" alt="">
+										<img src="img/layer_18_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item list-orders-item-ok">
+							<div class="orders-item-status">
+								<div class="item-status">
+									<div class="order-status ok">
+										Выполнен
+									</div>	
+									<div class="history">
+										<a href="#"><span>История</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="info-product">
+								<div class="order-number">
+									<a href="#"><span>№ 100710980</span></a>
+								</div>
+								<div class="order-wrapper">
+									<div class="order-date">
+										15 августа 2014 15:25
+									</div>
+									<div class="price-product">
+										1 товар на 386 грн.
+									</div>
+									<div class="product">
+										<img src="img/layer_7_copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-orders-item-more">
+							<div class="list-orders-item-show-more">
+								<a href="#" class="show-more">Показать еще</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		
+		<div class="page__line">
+			
+		</div>
+</body>
+</html>

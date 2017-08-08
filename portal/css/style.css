@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.b-page {
+	width: 100%;
+	background-color: #ffffff;
+	font-family: 'Myriad Pro';
+	font-size: 12px;
+}
+.b-page__portal {
+	width: 234px;
+	max-height: 700px;
+	border-bottom: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+	overflow-y: auto;
+    overflow-style: overlay;
+    width: max-content;
+}
+.b-page__portal ul {
+	list-style: none;
+}
+.b-page__portal li {
+	margin-bottom: 5px;
+	zoom: 1;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.b-сategory-menu__item:before,
+.sub-menu-first__item:before,
+.sub-menu-second-level__item:before {
+	content: "";
+	width: 9px;
+	height: 9px;
+	background: url('../img/spritesheet.png') no-repeat -40px -24px;
+	float: left;
+	position: relative;
+	top: 8px;
+}
+li:hover:before {
+	background: url('../img/spritesheet.png') no-repeat -39px -43px;
+}
+.b-page__portal a {
+	text-decoration: none;
+	color: #3e77aa;
+}
+.b-page__portal a:hover {
+	color: #ff3543;
+}
+.b-page__portal a:active {
+	color: #4c9cec;
+}
+.b-link {
+	display: block;
+	padding: 5px 10px;
+	margin-left: 20px;
+}
+.number-goods {	
+	color: #cfcfcf;
+	margin-left: 5px;
+}
+.circle {
+	border: 1px solid;
+    border-radius: 50%;
+    padding: 0px 3px;
+    font-size: 10px;
+} 
+li:active:before {	
+	background: url('../img/spritesheet.png') no-repeat -20px -25px;
+	width: 10px;
+}
+.active {
+	display: none;
+}
+.menu_item-toggle:active > .active {
+	display: block;
+}
+.menu_item-toggle .b-link_category-menu:active {
+	color: #000;
+	font-weight: bold;
+}
+.menu_item-toggle:hover > .active {
+    display: block;   
+}
+.first_item-toggle:hover > .active {
+	display: block;
+}
+.first_item-toggle:active > .active {
+	display: block;
+}
+.first_item-toggle > a:active {
+	color: #000;
+	font-weight: bold;
+}
+.second_item-toggle:hover > .active {
+	display: block;
+}
+.second_item-toggle:active > .active {
+	display: block;
+}
+.second_item-toggle > a:active {
+	color: #000;
+	font-weight: bold;
+}
