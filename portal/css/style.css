@@ -100,14 +100,10 @@ li:active:before {
 .active:hover {
 	display: block;
 }
-.first_item-toggle > a:active {
+.b-link:active {
 	color: #000;
 	font-weight: bold;
 }
 .second_item-toggle:active > .active {
 	display: block;
-}
-.second_item-toggle > a:active {
-	color: #000;
-	font-weight: bold;
 }
