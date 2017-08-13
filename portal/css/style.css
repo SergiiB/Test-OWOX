@@ -10,7 +10,7 @@
 	font-size: 12px;
 }
 .b-page__portal {
-	width: 234px;
+	max-width: 234px;
 	max-height: 700px;
 	border-bottom: 1px solid #eaeaea;
 	border-right: 1px solid #eaeaea;
@@ -92,9 +92,11 @@ li:active:before {
 	color: #000;
 	font-weight: bold;
 }
-/*.menu_item-toggle:hover > .active {
+.menu_item-toggle:hover > .active,
+.first_item-toggle:hover > .active,
+.second_item-toggle:hover > .active {
     display: block;   
-}*/
+}
 .first_item-toggle:focus > .active,
 .first_item-toggle:active > .active,
 .active:hover {
