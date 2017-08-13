@@ -14,14 +14,17 @@
 	max-height: 700px;
 	border-bottom: 1px solid #eaeaea;
 	border-right: 1px solid #eaeaea;
+	overflow: hidden;
+}
+.b-page__portal:hover {
 	overflow-y: auto;
     overflow-style: overlay;
     width: max-content;
 }
-.b-page__portal ul {
+ul {
 	list-style: none;
 }
-.b-page__portal li {
+li {
 	margin-bottom: 5px;
 	zoom: 1;
 	padding-left: 10px;
@@ -41,14 +44,14 @@
 li:hover:before {
 	background: url('../img/spritesheet.png') no-repeat -39px -43px;
 }
-.b-page__portal a {
+a {
 	text-decoration: none;
 	color: #3e77aa;
 }
-.b-page__portal a:hover {
+a:hover {
 	color: #ff3543;
 }
-.b-page__portal a:active {
+a:active {
 	color: #4c9cec;
 }
 .b-link {
@@ -56,6 +59,15 @@ li:hover:before {
 	padding: 5px 10px;
 	margin-left: 20px;
 }
+.visible {
+	color: #000;
+	font-weight: bold;
+}
+.b-сategory-menu__item_active::before,
+.b-сategory-menu__item_title::before {
+	content: none;
+}
+
 .number-goods {	
 	color: #cfcfcf;
 	margin-left: 5px;
@@ -80,21 +92,17 @@ li:active:before {
 	color: #000;
 	font-weight: bold;
 }
-.menu_item-toggle:hover > .active {
+/*.menu_item-toggle:hover > .active {
     display: block;   
-}
-.first_item-toggle:hover > .active {
-	display: block;
-}
-.first_item-toggle:active > .active {
+}*/
+.first_item-toggle:focus > .active,
+.first_item-toggle:active > .active,
+.active:hover {
 	display: block;
 }
 .first_item-toggle > a:active {
 	color: #000;
 	font-weight: bold;
-}
-.second_item-toggle:hover > .active {
-	display: block;
 }
 .second_item-toggle:active > .active {
 	display: block;
