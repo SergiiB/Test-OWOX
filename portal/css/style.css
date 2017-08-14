@@ -6,11 +6,11 @@
 .b-page {
 	width: 100%;
 	background-color: #ffffff;
-	font-family: 'Myriad Pro';
+	font-family: Arial, Helvetica;
 	font-size: 12px;
 }
 .b-page__portal {
-	max-width: 234px;
+	max-width: 237px;
 	max-height: 700px;
 	border-bottom: 1px solid #eaeaea;
 	border-right: 1px solid #eaeaea;
@@ -24,11 +24,22 @@
 ul {
 	list-style: none;
 }
+.b-сategory-menu__item_title {
+	margin-bottom: 3px;
+}
 li {
 	margin-bottom: 5px;
 	zoom: 1;
 	padding-left: 10px;
 	cursor: pointer;
+}
+.sub-menu-first-level li {
+	margin-bottom: 0px;
+	zoom: 1;
+	padding: 0 4px 2px 14px;
+}
+.first_item-toggle {
+	margin-top: 2px;
 }
 .b-сategory-menu__item:before,
 .sub-menu-first__item:before,
@@ -36,13 +47,16 @@ li {
 	content: "";
 	width: 9px;
 	height: 9px;
-	background: url('../img/spritesheet.png') no-repeat -40px -24px;
+	background: url('../img/plus_1.png') no-repeat;
+	border: 1px solid #3e77aa;
 	float: left;
 	position: relative;
-	top: 8px;
+	top: 6px;
+	left: 13px;
 }
 li:hover:before {
-	background: url('../img/spritesheet.png') no-repeat -39px -43px;
+	background: url('../img/plus_red_1.png') no-repeat;
+	border: 1px solid #ff3543;
 }
 a {
 	text-decoration: none;
@@ -62,15 +76,16 @@ a:active {
 .visible {
 	color: #000;
 	font-weight: bold;
+	margin-left: 22px;
+	margin-bottom: 4px;
 }
 .b-сategory-menu__item_active::before,
 .b-сategory-menu__item_title::before {
 	content: none;
 }
-
 .number-goods {	
 	color: #cfcfcf;
-	margin-left: 5px;
+	margin-left: 3px;
 }
 .circle {
 	border: 1px solid;
@@ -78,9 +93,10 @@ a:active {
     padding: 0px 3px;
     font-size: 10px;
 } 
-li:active:before {	
-	background: url('../img/spritesheet.png') no-repeat -20px -25px;
-	width: 10px;
+.sub-menu-first-level li:active:before {	
+	content: "";
+	background: url('../img/minus_1.png') no-repeat;
+	border: 1px solid #3e77aa;
 }
 .active {
 	display: none;
@@ -92,20 +108,16 @@ li:active:before {
 	color: #000;
 	font-weight: bold;
 }
-.menu_item-toggle:hover > .active,
-.first_item-toggle:hover > .active,
-.second_item-toggle:hover > .active {
-    display: block;   
-}
 .first_item-toggle:focus > .active,
 .first_item-toggle:active > .active,
 .active:hover {
 	display: block;
 }
-.b-link:active {
-	color: #000;
-	font-weight: bold;
-}
 .second_item-toggle:active > .active {
 	display: block;
+}
+.first_item-toggle:active > a,
+.second_item-toggle:active > a {
+	color: #000;
+	font-weight: bold;
 }
