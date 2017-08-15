@@ -101,23 +101,46 @@ a:active {
 .active {
 	display: none;
 }
-.menu_item-toggle:active > .active {
-	display: block;
-}
-.menu_item-toggle .b-link_category-menu:active {
+.menu_item-toggle .b-link_category-menu {
 	color: #000;
 	font-weight: bold;
-}
-.first_item-toggle:focus > .active,
-.first_item-toggle:active > .active,
-.active:hover {
-	display: block;
-}
-.second_item-toggle:active > .active {
-	display: block;
 }
 .first_item-toggle:active > a,
 .second_item-toggle:active > a {
 	color: #000;
 	font-weight: bold;
+}
+.open {
+	display: block;
+}
+.open .first_item-toggle::before {
+	content: "";
+	background: url('../img/minus_1.png') no-repeat;
+	border: 1px solid #3e77aa;
+}
+
+.open .first_item-toggle a {
+	color: #000;
+	font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    border-width: 1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+::-webkit-scrollbar-track{
+    border-width: 0;
+}
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
 }

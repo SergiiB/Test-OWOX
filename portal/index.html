@@ -11,7 +11,7 @@
 			<li class="b-сategory-menu__item_title"><a href="#" class="b-link b-link_category-menu">Интернет-супермаркет №<span class="circle">1</span></a></li>
 			<li class="b-сategory-menu__item  b-сategory-menu__item_active menu_item-toggle">
 				<a href="#" class="b-link b-link_category-menu visible">Товары для дома<span class="number-goods">(1 518)</span></a>
-				<ul class="sub-menu-first-level">
+				<ul class="sub-menu-first-level" id="">
 					<li class="sub-menu-first__item">
 						<a href="#" class="b-link">Текстиль для спальни<br> и гостиной<span class="number-goods">(118)</span></a>
 					</li>
@@ -36,13 +36,13 @@
 					<li class="sub-menu-first__item">
 						<a href="#" class="b-link">Хозяйственные товары<span class="number-goods">(118)</span></a>
 					</li>
-					<li class="sub-menu-first__item first_item-toggle">
+					<li class="sub-menu-first__item first_item-toggle toggle">
 
-						<a href="#" class="b-link">Инвентарь для дома и офиса<span class="number-goods">(576)</span></a>
-						<ul class="sub-menu-second-level active" id="id1">
-							<li class="sub-menu-second-level__item second_item-toggle">
-								<a href="#" class="b-link">Лестницы, стремянки, подмости<span class="number-goods">(118)</span></a>
-								<ul class="sub-menu-third-level active">
+						<a href="#" data="Level1" class="b-link">Инвентарь для дома и офиса<span class="number-goods">(576)</span></a>
+						<ul class="sub-menu-second-level active Level1">
+							<li class="sub-menu-second-level__item second_item-toggle toggle">
+								<a href="#" data="Level2" class="b-link">Лестницы, стремянки, подмости<span class="number-goods">(118)</span></a>
+								<ul class="sub-menu-third-level active Level2">
 									<li class="sub-menu__item">
 										<a href="#" class="b-link">2х-секционные лестницы<span class="number-goods">(8)</span></a>
 									</li>
@@ -156,5 +156,7 @@
 			</li>
 		</ul>
 	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/toggle.js"></script>
 </body>
 </html>
