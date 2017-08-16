@@ -3,27 +3,23 @@ $(document).ready(function () {
 		var $parent = $(this).parent();
 
 		$parent.find('> ul').toggle();
-		$parent.find('.plus').first().toggleClass('minus');
-
-		// if($parent.css('display') === 'none'){
-		// 	$('.submenu ul').css('display', 'none');
-		// }
+		$parent.find('[data-bind="nextLevel"]').first().toggleClass('minus');
 	});
 	$('.submenu > a').on('click', function(){
-		$('.submenu > a').removeClass('active');
+		$('a').removeClass('active');
 		var active = $(this).first();
 
 		active.addClass('active');
-		active.prev('.plus').toggle();
+		active.prev('[data-bind="nextLevel"]').toggle();
 
-		if($('.submenu .b-link').hasClass('active'))
-			$('li .submenu').children('.plus').toggleClass('prev');
+		if($('.submenu > a').hasClass('active'))
+			$('.submenu > .plus').parent().children().first('.plus').toggleClass('prev');
 	})
 	$('.prev').on('click', function(){
 		var $parent = $(this).parent();
 
 		$parent.find('> ul').toggle();
-		$('plus').removeClass('prev');
+		$('.plus').removeClass('prev');
 	})
 
 });
