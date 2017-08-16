@@ -104,6 +104,18 @@ a:active {
 	background: url('../img/minus_1.png') no-repeat -1px -1px;
 	border: 1px solid #3e77aa;
 }
+.minus:hover {
+	width: 9px;
+	height: 9px;
+	background: url('../img/minus_red_1.png') no-repeat -1px -1px;
+	border: 1px solid #ff3543;
+}
+.prev {
+	background: url('../img/spritesheet.png') no-repeat -25px -5px;
+	width: 5px;
+	height: 10px; 
+	border: none;
+}
 .sub-menu-second-level,
 .sub-menu-third-level {
 	display: none;

@@ -14,6 +14,16 @@ $(document).ready(function () {
 		var active = $(this).first();
 
 		active.addClass('active');
-		active.prev('.plus').hide();
+		active.prev('.plus').toggle();
+
+		if($('.submenu .b-link').hasClass('active'))
+			$('li .submenu').children('.plus').toggleClass('prev');
 	})
+	$('.prev').on('click', function(){
+		var $parent = $(this).parent();
+
+		$parent.find('> ul').toggle();
+		$('plus').removeClass('prev');
+	})
+
 });
