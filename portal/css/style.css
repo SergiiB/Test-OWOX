@@ -78,6 +78,10 @@ a:active {
 	margin-left: 22px;
 	margin-bottom: 4px;
 }
+.active {
+	color: #000;
+	font-weight: bold;
+}
 .number-goods {	
 	color: #cfcfcf;
 	margin-left: 3px;
@@ -89,6 +93,12 @@ a:active {
     font-size: 10px;
 } 
 .plus:active {	
+	width: 9px;
+	height: 9px;
+	background: url('../img/minus_1.png') no-repeat -1px -1px;
+	border: 1px solid #3e77aa;
+}
+.minus {
 	width: 9px;
 	height: 9px;
 	background: url('../img/minus_1.png') no-repeat -1px -1px;
