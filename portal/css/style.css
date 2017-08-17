@@ -111,9 +111,9 @@ a:active {
 	border: 1px solid #ff3543;
 }
 .prev {
-	background: url('../img/spritesheet.png') no-repeat -25px -5px;
+	background: url('img/spritesheet.png') no-repeat -25px -5px;
 	width: 5px;
-	height: 10px; 
+	height: 10px;
 	border: none;
 }
 .sub-menu-second-level,
