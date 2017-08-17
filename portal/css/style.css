@@ -26,12 +26,14 @@ ul {
 }
 .b-сategory-menu__item_title {
 	margin-bottom: 3px;
+	display: block;
 }
 li {
 	margin-bottom: 5px;
 	zoom: 1;
 	padding-left: 10px;
 	cursor: pointer;
+	position: relative;
 }
 .sub-menu-first-level li {
 	margin-bottom: 0px;
@@ -73,8 +75,6 @@ a:active {
 	margin-left: 20px;
 }
 .b-link_category-menu_active {
-	color: #000;
-	font-weight: bold;
 	margin-left: 22px;
 	margin-bottom: 4px;
 }
@@ -111,10 +111,13 @@ a:active {
 	border: 1px solid #ff3543;
 }
 .prev {
-	background: url('img/spritesheet.png') no-repeat -25px -5px;
 	width: 5px;
 	height: 10px;
+	background: url('../img/spritesheet.png') no-repeat -25px -5px;
 	border: none;
+	position: absolute;
+    top: 7px;
+    left: 30px;
 }
 .sub-menu-second-level,
 .sub-menu-third-level {
