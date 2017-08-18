@@ -24,8 +24,18 @@ $(document).ready(function () {
 		$(this).parent().find(' li').show();
 
 		if($(this).parent().find('a.active').next('ul').length > 0){
-			$(this).parent().find('ul').children().first().find('.plus').css('display', 'block');
-			$(this).parent().find('ul').children().first().find('ul').css('display', 'none');
+			$(this).parent().find('ul').children().find('.plus').css('display', 'block');
+			$(this).parent().find('ul').children().find('ul').css('display', 'none');
+		}
+	})
+		$('.menu_item-toggle > a').on('click', function(){
+		$('li > a').removeClass('active');
+		$(this).parent().find('a').first().addClass('active')
+		$(this).parent().find('li').show();
+
+		if($(this).parent().find('a.active').next().has('ul').length > 0){
+			$(this).parent().children().find('ul').css('display', 'none');
+			$(this).parent().children().find('.plus').css('display', 'block');
 		}
 	})
 });
